@@ -1,34 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anitha | Software Developer Portfolio</title>
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
+<body>
 <nav class="navbar">
     <h1 class="logo">Portfolio.</h1>
-    <ul>
+    <div class="f">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+       <ul id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#project">Project</a></li>
+        <li><a href="#projects">Project</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-<!-- home section -->
+
+<!-- HOME SECTION  -->
 <section class="home" id="home">
     <div class="main">
         <h1>Hello, I’m <span>Anitha</span></h1>
         <h2>Python Full Stack Developer</h2>
-
         <p>
             Passionate software developer with a strong foundation in web development and Python.
             Actively seeking entry-level opportunities to apply my skills and grow in a professional environment.
         </p>
-
         <div class="icons">
-            <a href="#" target="_blank">
+            <a href="" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
             <a href="https://github.com/Anitha-48" target="_blank">
@@ -39,28 +44,27 @@
             </a>
         </div>
 
-        <a href="./images/Anitha resume.pdf" download>
+        <a href="./images/Anitha-v-FlowCV-Resume-20260218.pdf">
             <button class="btn">Download CV</button>
         </a>
     </div>
+    <img class="photo" src="./images/WhatsApp Image 2025-12-27 at 3.51.31 PM.jpeg" width="300px">
 </section>
-<!-- about section -->
+<!-- ABOUT SECTION  -->
 <section class="about" id="about">
     <div class="containerabout">
 
-        <div class="aboutimage">
-            <img src="./images/WhatsApp Image 2025-12-27 at 3.51.31 PM.jpeg" alt="Anitha Profile Photo">
-        </div>
-
-        <div class="content">
-            <h2>About Me</h2>
+             <div class="content">
+            <h2 style="text-align: center;">About Me</h2>
             <p>
-                I am Anitha, a Software Developer fresher with a strong interest in web development and Python programming.
+                I am Anitha, a Software Developer fresher with a strong interest in web development and Python
+                programming.
                 Based in Chennai, I am actively seeking entry-level opportunities in the software industry.
             </p>
 
             <p>
-                I completed my Bachelor of Computer Applications (BCA) from a college affiliated with Alagappa University
+                I completed my Bachelor of Computer Applications (BCA) from a college affiliated with Alagappa
+                University
                 and secured the 5th University Rank.
             </p>
 
@@ -71,7 +75,7 @@
         </div>
     </div>
 </section>
-<!-- education section -->
+<!-- EDUCATION SECTION  -->
 <section class="education" id="education">
     <div class="edu-container">
         <h2>Education</h2>
@@ -91,159 +95,162 @@
             <p><strong>Percentage:</strong> 80%</p>
             <span class="year">2022</span>
         </div>
-        
+ 
     </div>
 </section>
-<!-- skills section -->
+<!-- SKILLS SECTION -->
 <section class="skills" id="skills">
-    <h2 class="title">Technical Skills</h2>
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
 
-    <div class="containersk">
+        <div class="skills-grid">
 
-        <div class="box">
-            <img src="./images/html5.webp" alt="HTML">
-            <h3>HTML5</h3>
-            <p>Structuring modern, accessible web pages.</p>
-        </div>
+            <div class="skill-card">
+                <img src="images/html5.webp" alt="HTML">
+                <p>HTML</p>
+            </div>
 
-        <div class="box">
-            <img src="./images/css3.jpeg" alt="CSS">
-            <h3>CSS3</h3>
-            <p>Styling responsive and visually appealing websites.</p>
-        </div>
+            <div class="skill-card">
+                <img src="images/css3.jpeg" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/boot.jpeg" alt="Bootstrap">
+                <p>Bootstrap</p>
+            </div>
 
-        <div class="box">
-            <img src="./images/js.png" alt="JavaScript">
-            <h3>JavaScript</h3>
-            <p>Adding interactivity and dynamic behavior to websites.</p>
-        </div>
 
-        <div class="box">
-            <img src="./images/Python-logo-notext.svg.png" alt="Python">
-            <h3>Python</h3>
-            <p>Backend logic, scripting, and problem solving.</p>
-        </div>
+            <div class="skill-card">
+                <img src="images/js.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/re.webp" alt="React">
+                <p>React</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/Python-logo-notext.svg.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/mysql.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
 
-        <div class="box">
-            <img src="./images/mysql.png" alt="MySQL">
-            <h3>MySQL</h3>
-            <p>Managing and querying relational databases.</p>
-        </div>
 
-        <div class="box">
-            <img src="./images/boot.jpeg" alt="Bootstrap">
-            <h3>Bootstrap</h3>
-            <p>Building responsive layouts quickly.</p>
-        </div>
-         <div class="box">
-            <img src="./images/django.png" alt="django">
-            <h3>Django</h3>
-            <p>Django is an frame work</p>
-        </div>
-        <div class="box">
-            <img src="./images/react.png" alt="reactjs">
-            <h3>React Js</h3>
-            <p>React js is popular frame work</p>
+            <div class="skill-card">
+                <img src="images/django.png" alt="Django">
+                <p>Django</p>
+            </div>
+
+
+
+
         </div>
     </div>
 </section>
+
 <!-- PROJECTS SECTION -->
 <section id="projects">
-  <h2 class="section-title">My Projects</h2>
+    <h2 class="section-title">My Projects</h2>
 
-  <div class="projects-container">
+    <div class="projects-container">
 
-    <div class="project-card">
-      <img src="./images/portfoliosshot.png" alt="Portfolio Website">
-      <div class="project-content">
-        <h3>Portfolio Website</h3>
-        <p>A responsive personal portfolio built using HTML and CSS.</p>
+        <div class="project-card">
+            <img src="./images/portfoliosshot.png" alt="Portfolio Website">
+            <div class="project-content">
+                <h3>Portfolio Website</h3>
+                <p>A responsive personal portfolio built using HTML and CSS.</p>
 
-        <div class="tech">
-          <span>HTML</span>
-          <span>CSS</span>
+                <div class="tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+            </div>
         </div>
 
-        <div class="buttons">
-          <a href="#">Demo</a>
-          <a href="#">GitHub</a>
+        <div class="project-card">
+            <img src="./images/news.jpeg" alt="News Aggregator">
+            <div class="project-content">
+                <h3>News Aggregator</h3>
+                <p>Latest headlines collected from multiple news sources.</p>
+
+                <div class="tech">
+                    <span>Python</span>
+                </div>
+
+
+            </div>
         </div>
-      </div>
+
+        <div class="project-card">
+            <img src="./images/student.png" alt="Student Grade Management">
+            <div class="project-content">
+                <h3>Student Grade Management System</h3>
+                <p>Simplifying student performance and grade tracking.</p>
+
+                <div class="tech">
+                    <span>Python</span>
+                </div>
+
+            </div>
+        </div>
+
     </div>
-
-    <div class="project-card">
-      <img src="./images/news.jpeg" alt="News Aggregator">
-      <div class="project-content">
-        <h3>News Aggregator</h3>
-        <p>Latest headlines collected from multiple news sources.</p>
-
-        <div class="tech">
-          <span>Python</span>
-          <span>PyCharm</span>
-        </div>
-
-        <div class="buttons">
-          <a href="#">Demo</a>
-          <a href="#">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="./images/student.png" alt="Student Grade Management">
-      <div class="project-content">
-        <h3>Student Grade Management System</h3>
-        <p>Simplifying student performance and grade tracking.</p>
-
-        <div class="tech">
-          <span>Python</span>
-        </div>
-
-        <div class="buttons">
-          <a href="#">Demo</a>
-          <a href="#">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
 </section>
 
-<!-- conatct section -->
+<!-- CONTACT SECTION  -->
 <section class="contact" id="contact">
-    <h2 class="contact-title">Get In Touch</h2>
-    <p class="contact-subtitle">
-        Feel free to reach out for opportunities, collaborations, or any queries.
-    </p>
+
+    <h2 class="contact-title">Contact Me</h2>
 
     <div class="contact-container">
 
-        
         <div class="contact-info">
-            <div class="info-box">
-                <i class="fa-solid fa-phone"></i>
-                <p>+91 XXXXX XXXXX</p>
-            </div>
-
-            <div class="info-box">
-                <i class="fa-solid fa-envelope"></i>
-                <p>anithav0408@gmail.com</p>
-            </div>
-
-            <div class="info-box">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Chennai, India</p>
-            </div>
+            <h3>Get in Touch</h3>
+            <p>Email: anithav8200@example.com</p>
+            <p>Mobile: 8870086705 </p>
+            <p>Location: Chennai, India</p>
         </div>
 
-    
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
 
     </div>
-</section>
 
+</section>
+<!--FOOTER SECTION -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Anitha-48" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/aniiithaa__/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a><br> <br>
+
+
+
+
+            <p class="copyright">
+                © 2026 Anitha.
+                 All Rights Reserved.
+            </p>
+        </div>
+</footer>
+</body>
+</html>

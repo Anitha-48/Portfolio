@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+const imageUrl = (filename) =>
+  `${import.meta.env.BASE_URL}images/${encodeURIComponent(filename)}`;
+
 const navigation = [
   ["About", "#about"],
   ["Services", "#services"],
@@ -206,7 +209,7 @@ function App() {
             <div className="portrait-frame">
               <img
                 className="portrait"
-                src="/images/WhatsApp%20Image%202025-12-27%20at%203.51.31%20PM.jpeg"
+                src={imageUrl("WhatsApp Image 2025-12-27 at 3.51.31 PM.jpeg")}
                 alt="Anitha"
               />
               <span className="portrait-caption">A little bit of code, a lot of curiosity.</span>
@@ -300,7 +303,7 @@ function App() {
               {skills.map((skill) => (
                 <article className="skill-card" key={skill.name}>
                   <div className="skill-image-wrap">
-                    <img src={`/images/${skill.image}`} alt="" loading="lazy" />
+                    <img src={imageUrl(skill.image)} alt="" loading="lazy" />
                   </div>
                   <span>{skill.name}</span>
                 </article>
@@ -323,7 +326,7 @@ function App() {
               {projects.map((project, index) => (
                 <article className="project-card" key={project.name}>
                   <div className="project-image">
-                    <img src={`/images/${project.image}`} alt={`${project.name} preview`} loading="lazy" />
+                    <img src={imageUrl(project.image)} alt={`${project.name} preview`} loading="lazy" />
                     <span className="project-index">0{index + 1}</span>
                   </div>
                   <div className="project-info">
